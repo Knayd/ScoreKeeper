@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ScoreKeeper</string>
+    <string name="str_foul">Fouls:</string>
+    <string name="str_yellowcard">Yellow cards:</string>
+    <string name="str_directredcard">Direct red cards:</string>
+    <string name="str_redcardsbyyc">Red cards by YC</string>
+    <string name="str_totalredcards">Total red cards:</string>
+    <string name="btn_add_goal">+ Goal</string>
+    <string name="btn_add_foul">+ Foul</string>
+    <string name="btn_add_yellowcard">+ Yellow card</string>
+    <string name="btn_add_redcard">+ Red card</string>
+    <string name="str_penaltygoal">Penalty goals:</string>
+    <string name="btn_add_penaltygoal">+ Penalty goal</string>
+    <string name="btn_reset">Reset</string>
+    <string name="str_team_a">Team A</string>
+    <string name="str_team_b">Team B</string>
+</resources>

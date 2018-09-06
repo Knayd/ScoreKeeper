@@ -1,0 +1,17 @@
+<resources>
+    <string name="str_foul">Faltas:</string>
+    <string name="str_yellowcard">Tarjetas amarillas:</string>
+    <string name="str_directredcard">Tarjetas rojas directas:</string>
+    <string name="str_totalredcards">Total tarjetas rojas:</string>
+    <string name="btn_add_goal">+ Gol</string>
+    <string name="btn_add_foul">+ Falta</string>
+    <string name="btn_add_yellowcard">+ Tarjeta amarilla</string>
+    <string name="btn_add_redcard">+ Tarjeta roja</string>
+    <string name="str_penaltygoal">"Goles por penalti: "</string>
+    <string name="btn_add_penaltygoal">+ Gol por penalti</string>
+    <string name="btn_reset">Reiniciar</string>
+    <string name="app_name">Puntaje</string>
+    <string name="str_redcardsbyyc">Tarjetas rojas x 2 TA:</string>
+    <string name="str_team_a">Equipo A</string>
+    <string name="str_team_b">Equipo B</string>
+</resources>

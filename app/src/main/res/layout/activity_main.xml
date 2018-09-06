@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_team_a"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txv_goals_team_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_penaltygoal"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txv_penaltygoals_a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_foul"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txv_fouls_a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_yellowcard"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txv_yellowcards_a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_directredcard"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txv_directredcards_a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_redcardsbyyc"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txv_redcardsbyyellowcards_a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_totalredcards"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:id="@+id/txv_totalredcards_a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_goal_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/btn_add_goal"/>
+
+                <Button
+                    android:id="@+id/btn_penaltygoal_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/btn_add_penaltygoal"/>
+
+                <Button
+                    android:id="@+id/btn_foul_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/btn_add_foul"/>
+
+                <Button
+                    android:id="@+id/btn_yellow_card_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/btn_add_yellowcard"/>
+
+                <Button
+                    android:id="@+id/btn_red_card_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/btn_add_redcard"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_team_b"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txv_goals_team_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_penaltygoal"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txv_penaltygoals_b"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_foul"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txv_fouls_b"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_yellowcard"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txv_yellowcards_b"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_directredcard"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txv_directredcards_b"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_redcardsbyyc"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txv_redcardsbyyellowcards_b"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/str_totalredcards"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:id="@+id/txv_totalredcards_b"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="0"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_goal_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/btn_add_goal"/>
+
+                <Button
+                    android:id="@+id/btn_penaltygoal_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/btn_add_penaltygoal"/>
+
+                <Button
+                    android:id="@+id/btn_foul_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/btn_add_foul"/>
+
+                <Button
+                    android:id="@+id/btn_yellow_card_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/btn_add_yellowcard"/>
+
+                <Button
+                    android:id="@+id/btn_red_card_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/btn_add_redcard"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_reset"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

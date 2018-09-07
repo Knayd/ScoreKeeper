@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
     int scoreA,penaltiesA,foulsA,yellowCardsA,redCardsA,redCardsBy2YCA,
         scoreB,penaltiesB,foulsB,yellowCardsB,redCardsB, redCardsBy2YCB;
 
-    public void setViews()
-    {
+    public void setViews() {
         //Team A Textviwes
         txtScoreA = findViewById(R.id.txv_goals_team_a);
         txtPenaltyGoalsA = findViewById(R.id.txv_penaltygoals_a);
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void setNumberToTextView(TextView tv, int number){
+    public void setNumberToTextView(TextView tv, int number) {
         tv.setText("" + number);
     }
 
@@ -91,6 +91,61 @@ public class MainActivity extends AppCompatActivity {
         txtDirectRedCardsB.setText("0");
         txtRedCardsByYCB.setText("0");
         txtTotalRedCardsB.setText("0");
+    }
+
+
+    //To save
+    @Override
+    public void onSaveInstanceState(Bundle state) {
+        super.onSaveInstanceState(state);
+        //Team A
+        state.putString("txtScoreA", txtScoreA.getText().toString());
+        state.putString("txtPenaltyGoalsA", txtPenaltyGoalsA.getText().toString());
+        state.putString("txtFoulsA", txtFoulsA.getText().toString());
+        state.putString("txtYellowCardsA", txtYellowCardsA.getText().toString());
+        state.putString("txtDirectRedCardsA", txtDirectRedCardsA.getText().toString());
+        state.putString("txtRedCardsByYCA", txtRedCardsByYCA.getText().toString());
+        state.putString("txtTotalRedCardsA", txtTotalRedCardsA.getText().toString());
+
+        //Team B
+        state.putString("txtScoreB", txtScoreB.getText().toString());
+        state.putString("txtPenaltyGoalsB", txtPenaltyGoalsB.getText().toString());
+        state.putString("txtFoulsB", txtFoulsB.getText().toString());
+        state.putString("txtYellowCardsB", txtYellowCardsB.getText().toString());
+        state.putString("txtDirectRedCardsB", txtDirectRedCardsB.getText().toString());
+        state.putString("txtRedCardsByYCB", txtRedCardsByYCB.getText().toString());
+        state.putString("txtTotalRedCardsB", txtTotalRedCardsB.getText().toString());
+
+
+    }
+
+    //To retrieve
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState)
+    {
+        super.onRestoreInstanceState(savedInstanceState);
+        if(savedInstanceState!=null)
+        {
+            //Team A
+            txtScoreA.setText(savedInstanceState.getString("txtScoreA"));
+            txtPenaltyGoalsA.setText(savedInstanceState.getString("txtPenaltyGoalsA"));
+            txtFoulsA.setText(savedInstanceState.getString("txtFoulsA"));
+            txtYellowCardsA.setText(savedInstanceState.getString("txtYellowCardsA"));
+            txtDirectRedCardsA.setText(savedInstanceState.getString("txtDirectRedCardsA"));
+            txtRedCardsByYCA.setText(savedInstanceState.getString("txtRedCardsByYCA"));
+            txtTotalRedCardsA.setText(savedInstanceState.getString("txtTotalRedCardsA"));
+
+            //Team B
+            txtScoreB.setText(savedInstanceState.getString("txtScoreB"));
+            txtPenaltyGoalsB.setText(savedInstanceState.getString("txtPenaltyGoalsB"));
+            txtFoulsB.setText(savedInstanceState.getString("txtFoulsB"));
+            txtYellowCardsB.setText(savedInstanceState.getString("txtYellowCardsB"));
+            txtDirectRedCardsB.setText(savedInstanceState.getString("txtDirectRedCardsB"));
+            txtRedCardsByYCB.setText(savedInstanceState.getString("txtRedCardsByYCB"));
+            txtTotalRedCardsB.setText(savedInstanceState.getString("txtTotalRedCardsB"));
+
+
+        }
     }
 
     @Override
